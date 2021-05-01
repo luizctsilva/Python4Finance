@@ -79,7 +79,7 @@ dic['NÚMERO DE DISTRIBUIÇÃO DO PAPEL'] = [int(arq[nlinha][242:245]) for nlinh
 
 #6 Criando Dataframe com Pandas
 df_global = pd.DataFrame(dic)
-#df_global['DATA DO PREGÃO'] = pd.to_datetime(df_global['DATA DO PREGÃO'])
+df_global['DATA DO PREGÃO'] = pd.to_datetime(df_global['DATA DO PREGÃO'])
 print(df_global)
 
 #9 Informação de finalização do dataframe
